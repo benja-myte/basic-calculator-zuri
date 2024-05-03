@@ -4,10 +4,6 @@ function appendToResult(value) {
     result.value += value;
 }
 
-// function clearResult() {
-//     result.value = '';
-// }
-
 function operation(op) {
     result.value += op;
 }
