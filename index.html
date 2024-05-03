@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Calculator</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/8d8e864534.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+<div class="calculator2">
+
+    <input type="text" id="result" readonly>
+
+    <table class="table ">
+
+        <tr class="row">
+            <td><button onclick="appendToResult('7')">7</button></td>
+            <td><button onclick="appendToResult('8')">8</button></td>
+            <td><button onclick="appendToResult('9')">9</button></td>
+            <td><button onclick="operation('/')"><i class="fa-solid fa-divide"></i></button></td>
+        </tr>
+
+        <tr class="row">
+            <td><button onclick="appendToResult('4')">4</button></td>
+            <td><button onclick="appendToResult('5')">5</button></td>
+            <td><button onclick="appendToResult('6')">6</button></td>
+            <td><button onclick="operation('*')"><i class="fa-solid fa-xmark"></i></button></td>
+        </tr>
+
+        <tr class="row">
+            <td><button onclick="appendToResult('1')">1</button></td>
+            <td><button onclick="appendToResult('2')">2</button></td>
+            <td><button onclick="appendToResult('3')">3</button></td>
+            <td><button onclick="operation('-')"><i class="fa-solid fa-minus"></i></button></td>
+        </tr>
+
+        <tr class="row">
+            <td><button onclick="appendToResult('0')">0</button></td>
+            <td><button onclick="appendToResult('.')">.</button></td>
+           <!--<td><button onclick="clearResult()">C</button></td>---> 
+            <td><button onclick="operation('+')"><i class="fa-solid fa-plus"></i></button></td>
+            <td><button class="equal" onclick="calculate()"><i class="fa-solid fa-equals"></i></button></td>
+            
+        </tr>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
